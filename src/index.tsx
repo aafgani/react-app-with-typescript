@@ -11,6 +11,7 @@ import { Todo } from "./component/todo";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./index.css";
+import { Chat } from "./component/chat";
 
 const container = document.getElementById("root")!;
 const root = createRoot(container);
@@ -25,6 +26,7 @@ root.render(
             <Route path="/cocktail" element={<Cocktail />} />
             <Route path="/movie" element={<Movie />} />
             <Route path="/todo" element={<Todo />} />
+            <Route path="/chat" element={<Chat />} />
           </Route>
         </Routes>
       </BrowserRouter>
